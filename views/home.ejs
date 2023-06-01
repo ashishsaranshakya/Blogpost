@@ -1,0 +1,15 @@
+<%- include('header') -%>
+
+<div>
+    <% if(type==='post'){ %>
+        <%- include('post') -%>
+    <% } else{ if(type==='contact'){ %>
+        <%- include('contact') -%>
+    <% } else{ if(type==='compose'){ %>
+        <%- include('compose') -%> 
+    <% } else{ %>
+        <%- include('about') -%>
+    <% }}} %>
+</div>
+
+<%- include('footer') -%>
